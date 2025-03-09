@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizCompass - ビジネスマッチングコミュニティ</title>
+    <link rel="stylesheet" href="style-bizcompass.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>BizCompass</h1>
+        <p>フリーランス・起業家・個人事業主向けのビジネスマッチングコミュニティ</p>
+        <a href="https://lin.ee/KJXEj4T" class="cta-button">今すぐ参加する</a>
+    </header>
+    
+    <section class="about">
+        <h2>BizCompassとは？</h2>
+        <p>BizCompassは、フリーランスや個人事業主、起業家がビジネスを成長させるための<strong>ビジネスマッチング＆案件共有コミュニティ</strong>です。<br>
+        メンバー同士で案件を共有し、協業や新しい仕事を獲得するチャンスを提供します。</p>
+    </section>
+    
+    <section class="features">
+        <h2>BizCompassの主なサービス</h2>
+        <div class="feature">
+            <h3>案件共有</h3>
+            <p>メンバー限定で案件情報をリアルタイム配信！案件を活用して収益を伸ばそう。</p>
+        </div>
+        <div class="feature">
+            <h3>マッチング機能</h3>
+            <p>スキルや得意分野を活かして、他のメンバーと協業できる仕組みを提供！</p>
+        </div>
+        <div class="feature">
+            <h3>収益化の仕組み</h3>
+            <p>BizCompassでは案件投稿も可能！有料会員なら収益を得るチャンスも。</p>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <h2>BizCompassに参加してビジネスを加速しよう！</h2>
+        <p>無料で参加し、案件情報を活用して収益UPにつなげよう。</p>
+        <a href="https://lin.ee/KJXEj4T" class="cta-button">今すぐ参加する</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 BizCompass | ビジネスを成長させるマッチングプラットフォーム</p>
+    </footer>
+</body>
+</html>
