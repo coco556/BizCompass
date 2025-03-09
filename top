@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ライフコンパス - あなたの人生をナビゲート</title>
-    <link rel="stylesheet" href="style-lifecompass.css">
+    <title>BizCompass - ビジネスの成長を加速</title>
+    <link rel="stylesheet" href="style-bizcompass.css">
 </head>
 <body>
     <header class="hero">
-        <h1>ライフコンパス</h1>
-        <p>あなたの人生とビジネスを成功へ導く</p>
-        <a href="#contact" class="cta-button">無料相談はこちら</a>
+        <h1>BizCompass</h1>
+        <p>ビジネスを加速するための最強コミュニティ</p>
+        <a href="#join" class="cta-button">今すぐ参加する</a>
     </header>
     
     <section class="about">
-        <h2>ライフコンパスとは？</h2>
-        <p>ライフコンパスは、起業家や個人事業主が成功するためのナビゲーションを提供するプラットフォームです。ビジネスサポート、コーチング、戦略アドバイスなど、あなたの目標達成をサポートします。</p>
+        <h2>BizCompassとは？</h2>
+        <p>BizCompassは、フリーランスや起業家、個人事業主がビジネスを成長させるためのオンラインコミュニティです。案件共有、協業、収益化のチャンスを提供します。</p>
     </section>
     
     <section class="features">
-        <h2>私たちのサービス</h2>
+        <h2>BizCompassの特徴</h2>
         <div class="feature">
-            <h3>ビジネスコーチング</h3>
-            <p>あなたのビジネスを成長させるためのマンツーマンコーチング。</p>
+            <h3>案件共有</h3>
+            <p>無料で案件情報を閲覧し、ビジネスチャンスを獲得！</p>
         </div>
         <div class="feature">
-            <h3>戦略アドバイス</h3>
-            <p>成功するための具体的な戦略とアクションプランを提供。</p>
+            <h3>収益化の仕組み</h3>
+            <p>有料会員なら案件投稿＆収益化も可能！</p>
         </div>
         <div class="feature">
-            <h3>コミュニティサポート</h3>
-            <p>同じ志を持つ仲間と繋がり、情報を共有できる環境。</p>
+            <h3>強力なビジネスネットワーク</h3>
+            <p>同じ志を持つ仲間とつながり、成長できる環境。</p>
         </div>
     </section>
     
     <section class="cta">
-        <h2>今すぐ始めよう</h2>
-        <p>ライフコンパスに参加して、あなたの夢を実現しましょう。</p>
-        <a href="#contact" class="cta-button">無料相談はこちら</a>
+        <h2>今すぐBizCompassに参加しよう！</h2>
+        <p>案件情報を活用し、ビジネスの可能性を広げよう。</p>
+        <a href="https://lin.ee/KJXEj4T" class="cta-button">お問い合わせはこちら</a>
     </section>
     
     <footer>
-        <p>&copy; 2025 ライフコンパス | すべての権利を保有</p>
+        <p>&copy; 2025 BizCompass | すべての権利を保有</p>
     </footer>
 </body>
 </html>
