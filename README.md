@@ -1,30 +1,10 @@
-# ライフコンパス LP
+# BizCompass LP
 
-このリポジトリは、ライフコンパスのランディングページ（LP）をホストするためのものです。
+このリポジトリは、BizCompassのランディングページ（LP）をホストするためのものです。
 
 ## 🔹 サイト概要
-**ライフコンパス**は、起業家や個人事業主が成功するためのサポートを提供するプラットフォームです。ビジネスコーチング、戦略アドバイス、コミュニティ支援を通じて、あなたの夢の実現をサポートします。
+**BizCompass**は、フリーランスや起業家、個人事業主がビジネスを成長させるためのオンラインコミュニティです。案件共有、協業、収益化のチャンスを提供します。
 
-🔗 **GitHub Pages URL:** [https://あなたのGitHubユーザー名.github.io/lifecompass-lp/](https://あなたのGitHubユーザー名.github.io/lifecompass-lp/)
+🔗 **GitHub Pages URL:** [https://あなたのGitHubユーザー名.github.io/bizcompass-lp/](https://あなたのGitHubユーザー名.github.io/bizcompass-lp/)
 
 ## 📂 ファイル構成
-```
-lifecompass-lp/
-│── index.html             # ランディングページ本体
-│── style-lifecompass.css   # スタイルシート（デザイン）
-│── README.md              # このリポジトリの説明ファイル
-```
-
-## 🚀 GitHub Pagesで公開する方法
-1. **このリポジトリをフォークまたはクローンする**
-2. **ファイルを編集・カスタマイズ**（`index.html` や `style-lifecompass.css` を変更）
-3. **GitHubの「Settings」→「Pages」でブランチを`main`に設定**
-4. **公開されたURLにアクセス**
-
-## ✨ 特徴
-- **シンプルで直感的なデザイン**
-- **レスポンシブ対応（スマホ・タブレット対応）**
-- **CTAボタンで問い合わせ誘導**
-
-## 📌 ライセンス
-このプロジェクトは **MITライセンス** のもとで提供されます。
