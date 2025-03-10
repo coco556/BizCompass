@@ -23,7 +23,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.4; /* 動画を薄めに表示 */
+    opacity: 0.4;
 }
 
 /* ヒーローエリアのオーバーレイ（動画の視認性を上げる） */
@@ -34,39 +34,37 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* 透明度を調整して動画を薄めに */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 
-/* タイトルのサイズ調整 */
+/* タイトルのサイズ調整とシャープな印象 */
 .hero-title {
     font-size: 4rem;
     font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1.5s ease-out forwards;
 }
 
-/* スクロール後のセクションの背景色（水色に変更） */
+/* 動画以外のエリアの背景をシャープな黒とグレーに変更 */
 body {
-    background: white;
+    background: #0d0d0d;
     transition: background 0.5s ease-in-out;
+    color: #e0e0e0;
 }
 
-.scroll-effect body {
-    background: #e0f7fa !important;
-}
-
-section {
-    background: white;
+main, section {
+    background: linear-gradient(135deg, #141414 30%, #232323 70%);
     transition: background 0.5s ease-in-out;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease-out forwards;
-}
-
-.scroll-effect section {
-    background: #e0f7fa !important;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 /* フェードインアニメーション（スクロール時に文字が浮かび上がる） */
@@ -87,37 +85,21 @@ section {
     transform: translateY(0);
 }
 
-/* スクロールエフェクトスクリプト */
-<script>
-document.addEventListener("scroll", function () {
-    if (window.scrollY > window.innerHeight * 0.5) {
-        document.body.classList.add("scroll-effect");
-        document.querySelectorAll("section").forEach((section) => {
-            section.classList.add("visible");
-        });
-    } else {
-        document.body.classList.remove("scroll-effect");
-        document.querySelectorAll("section").forEach((section) => {
-            section.classList.remove("visible");
-        });
-    }
-});
-</script>
-
-/* CTAボタンのスタイル */
+/* CTAボタンのシャープなデザイン */
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background: #ff4081;
+    background: linear-gradient(135deg, #ff4081, #ff1744);
     color: white;
     font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.5);
 }
 
 .cta-button:hover {
-    background: #e60074;
+    background: linear-gradient(135deg, #e60074, #d50000);
 }
 
 /* バウンスアニメーション（ボタン用） */
