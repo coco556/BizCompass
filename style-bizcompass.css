@@ -1,86 +1,34 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BizCompass - ビジネスマッチングコミュニティ</title>
-    <meta name="description" content="フリーランス・起業家・個人事業主向けのビジネスマッチングコミュニティ。案件共有、協業、収益化をサポート！">
-    <meta property="og:title" content="BizCompass - ビジネスマッチングコミュニティ">
-    <meta property="og:description" content="案件共有・協業・収益化のためのオンラインコミュニティ">
-    <meta property="og:image" content="https://coco556.github.io/BizCompass/og-image.jpg">
-    <meta property="og:url" content="https://coco556.github.io/BizCompass/">
-    <link rel="stylesheet" href="style-bizcompass.css">
-</head>
-<body>
-    <header class="hero">
-        <video autoplay muted loop class="bg-video">
-            <source src="20250310_1253_Japanese Business Harmony_simple_compose_01jnz2zfk8f6brtv7b7b4f87we.mp4" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <h1 class="typing">BizCompass</h1>
-            <p class="fade-in">フリーランス・起業家・個人事業主向けのビジネスマッチングコミュニティ</p>
-            <a href="https://lin.ee/KJXEj4T" class="cta-button slide-in">今すぐ参加する</a>
-        </div>
-    </header>
-    
-    <section class="about fade-in-up">
-        <h2>BizCompassとは？</h2>
-        <p>BizCompassは、フリーランスや個人事業主、起業家がビジネスを成長させるための<strong>ビジネスマッチング＆案件共有コミュニティ</strong>です。<br>
-        メンバー同士で案件を共有し、協業や新しい仕事を獲得するチャンスを提供します。</p>
-    </section>
-    
-    <section class="features fade-in-up">
-        <h2>BizCompassの主なサービス</h2>
-        <div class="feature zoom-in">
-            <h3>案件共有</h3>
-            <p>メンバー限定で案件情報をリアルタイム配信！案件を活用して収益を伸ばそう。</p>
-        </div>
-        <div class="feature zoom-in">
-            <h3>マッチング機能</h3>
-            <p>スキルや得意分野を活かして、他のメンバーと協業できる仕組みを提供！</p>
-        </div>
-        <div class="feature zoom-in">
-            <h3>収益化の仕組み</h3>
-            <p>BizCompassでは案件投稿も可能！有料会員なら収益を得るチャンスも。</p>
-        </div>
-    </section>
-    
-    <section class="faq fade-in-up">
-        <h2>よくある質問</h2>
-        <details>
-            <summary>BizCompassは無料で利用できますか？</summary>
-            <p>無料会員として案件情報を閲覧できます。有料会員になると案件投稿や収益化が可能になります。</p>
-        </details>
-        <details>
-            <summary>どのような案件がありますか？</summary>
-            <p>Web制作、マーケティング、営業代行、コンサルティングなど、幅広い分野の案件があります。</p>
-        </details>
-    </section>
-    
-    <section class="cta fade-in">
-        <h2>BizCompassに参加してビジネスを加速しよう！</h2>
-        <p>無料で参加し、案件情報を活用して収益UPにつなげよう。</p>
-        <a href="https://lin.ee/KJXEj4T" class="cta-button bounce">今すぐ参加する</a>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 BizCompass | ビジネスを成長させるマッチングプラットフォーム</p>
-    </footer>
-    
-    <script>
-        // タイピングアニメーション
-        document.addEventListener("DOMContentLoaded", function() {
-            let text = "BizCompass";
-            let i = 0;
-            function typeEffect() {
-                if (i < text.length) {
-                    document.querySelector(".typing").innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(typeEffect, 100);
-                }
-            }
-            typeEffect();
-        });
-    </script>
-</body>
-</html>
+/* 背景動画の設定 */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* フェードインアニメーション */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* スライドインアニメーション */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* バウンスアニメーション（ボタン用） */
+.bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
