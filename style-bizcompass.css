@@ -50,9 +50,13 @@ body {
     transition: background 0.5s ease-in-out;
 }
 
-.scroll-effect {
-    background: #e0f7fa;
-    transition: background 1s ease-in-out;
+section {
+    background: white;
+    transition: background 0.5s ease-in-out;
+}
+
+.scroll-effect section {
+    background: #e0f7fa !important;
 }
 
 /* フェードインアニメーション（スクロール時に文字が浮かび上がる） */
@@ -69,16 +73,15 @@ body {
 }
 
 /* セクションの背景変更スクリプト */
+<script>
 document.addEventListener("scroll", function () {
-    let sections = document.querySelectorAll("section");
-    sections.forEach((section) => {
-        if (window.scrollY > window.innerHeight * 0.5) {
-            document.body.classList.add("scroll-effect");
-        } else {
-            document.body.classList.remove("scroll-effect");
-        }
-    });
+    if (window.scrollY > window.innerHeight * 0.5) {
+        document.body.classList.add("scroll-effect");
+    } else {
+        document.body.classList.remove("scroll-effect");
+    }
 });
+</script>
 
 /* CTAボタンのスタイル */
 .cta-button {
