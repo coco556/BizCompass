@@ -1,73 +1,4 @@
-/* 背景動画の設定（タイトルエリアのみ） */
-.bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 1;
-}
-
-.hero video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* ヒーローエリアのオーバーレイ */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 動画の上にオーバーレイ */
-    z-index: 0;
-}
-
-/* セクションの背景色（水色っぽい色に変更） */
-section {
-    padding: 60px 20px;
-    background: #e0f7fa;
-    margin: 30px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* フェードインアニメーション（スクロール時に文字が浮かび上がる） */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* スクロール時にアニメーション適用 */
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ズームインアニメーション */
-.zoom-in {
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-/* 背景動画の設定（タイトルエリアのみ） */
+/* ヒーローエリア（タイトル部分のみ動画背景） */
 .hero {
     position: relative;
     display: flex;
@@ -77,6 +8,7 @@ section {
     color: white;
     text-align: center;
     overflow: hidden;
+    background: rgba(0, 0, 0, 0.3); /* 少し暗めの背景を追加 */
 }
 
 .hero-content {
@@ -86,16 +18,16 @@ section {
 
 .hero video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    opacity: 0.5; /* 動画を薄めに表示 */
 }
 
-/* ヒーローエリアのオーバーレイ */
+/* ヒーローエリアのオーバーレイ（動画の視認性を上げる） */
 .hero::before {
     content: "";
     position: absolute;
@@ -103,24 +35,26 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 動画の上にオーバーレイ */
+    background: rgba(0, 0, 0, 0.3); /* 透明度を調整して動画を薄めに */
     z-index: 0;
 }
 
 /* タイトルのサイズ調整 */
 .hero-title {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
-/* セクションの背景色（水色） */
-section {
-    padding: 60px 20px;
+/* スクロール後のセクションの背景色（水色に変更） */
+body {
     background: #e0f7fa;
-    margin: 30px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out;
+}
+
+/* スクロール時のトランジション */
+.scroll-effect {
+    background: white;
+    transition: background 1s ease-in-out;
 }
 
 /* フェードインアニメーション（スクロール時に文字が浮かび上がる） */
@@ -134,13 +68,6 @@ section {
 .visible {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* ズームインアニメーション */
-.zoom-in {
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 /* CTAボタンのスタイル */
