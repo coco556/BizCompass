@@ -1,15 +1,4 @@
-/* 背景動画の設定 */
-.bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/* ヘッダーコンテンツのスタイル */
+/* 背景動画の設定（タイトルエリアのみ） */
 .hero {
     position: relative;
     display: flex;
@@ -26,18 +15,6 @@
     z-index: 1;
 }
 
-/* 動画を背景に設定 */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 動画の上にオーバーレイ */
-    z-index: 0;
-}
-
 .hero video {
     position: absolute;
     top: 50%;
@@ -49,18 +26,39 @@
     z-index: -1;
 }
 
-/* フェードインアニメーション */
+/* ヒーローエリアのオーバーレイ */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 動画の上にオーバーレイ */
+    z-index: 0;
+}
+
+/* セクションの背景色（水色っぽい色に変更） */
+section {
+    padding: 60px 20px;
+    background: #e0f7fa;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* フェードインアニメーション（スクロール時に文字が浮かび上がる） */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* スライドインアニメーション */
-.slide-in {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+/* スクロール時にアニメーション適用 */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ズームインアニメーション */
@@ -68,64 +66,4 @@
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* バウンスアニメーション（ボタン用） */
-.bounce {
-    animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-
-/* スクロール時にアニメーション適用 */
-.visible {
-    opacity: 1;
-    transform: translateY(0) translateX(0) scale(1);
-}
-
-/* セクションデザイン */
-section {
-    padding: 60px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    margin: 30px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* テストモニアル（ユーザーの声） */
-.testimonial {
-    background: #f8f9fa;
-    padding: 20px;
-    border-left: 5px solid #007bff;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-.testimonial span {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #333;
-}
-
-/* FAQのデザイン */
-details {
-    background: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-summary {
-    font-weight: bold;
-    color: #007bff;
-}
-
-summary:hover {
-    color: #0056b3;
 }
