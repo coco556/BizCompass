@@ -8,7 +8,6 @@
     color: white;
     text-align: center;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.3); /* 少し暗めの背景を追加 */
 }
 
 .hero-content {
@@ -24,7 +23,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5; /* 動画を薄めに表示 */
+    opacity: 0.4; /* 動画を薄めに表示 */
 }
 
 /* ヒーローエリアのオーバーレイ（動画の視認性を上げる） */
@@ -47,13 +46,12 @@
 
 /* スクロール後のセクションの背景色（水色に変更） */
 body {
-    background: #e0f7fa;
+    background: white;
     transition: background 0.5s ease-in-out;
 }
 
-/* スクロール時のトランジション */
 .scroll-effect {
-    background: white;
+    background: #e0f7fa;
     transition: background 1s ease-in-out;
 }
 
@@ -69,6 +67,18 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* セクションの背景変更スクリプト */
+document.addEventListener("scroll", function () {
+    let sections = document.querySelectorAll("section");
+    sections.forEach((section) => {
+        if (window.scrollY > window.innerHeight * 0.5) {
+            document.body.classList.add("scroll-effect");
+        } else {
+            document.body.classList.remove("scroll-effect");
+        }
+    });
+});
 
 /* CTAボタンのスタイル */
 .cta-button {
